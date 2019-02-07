@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+	<button id="btn3">Yazıyı Göster</button>
+	<input type="button" id="btn" name value="Default">
+	<p id="p3" style="display: none;">Hatice ALTINOK <br>
+		Pamukkale Üniversitesi
+	</p>
+	<p id="p4" style="display: none;">Yönetim Bilişim Sistemleri<br>
+		3.sınıf
+	</p>
+	<p id="p5" style="display: none;">kdhjfsdjsdghgg<br>
+		jhgfghjskjajffg	
+	</p>
+
+	<script>
+		$("#btn3").click(function(){
+   			$("#p3").fadeIn(1000); //Nesne belirtilen sürede (ms) görünür hale gelir.
+		});
+		$("#p3").click(function(){
+   			$("#p4").fadeIn(1000);
+		});
+		$("#p4").click(function(){
+   			$("#p5").fadeIn(1000);
+		});
+	</script>
+<script>
+	$("#btn").click(function(){   //btn selektörünün içeriğine gönderiyor
+   		$("#p5").hide(1000); //hide:bir nesneyi belirtilen sürede(ms) animasyonlu gizler
+   		$("#p4").hide(1000);
+   		$("#p3").hide(1000);
+});
+</script>
+
+</body>
+</html>
